@@ -10,6 +10,6 @@
  * @returns {Array} - An array of 3 objects.
  */
 export default function hasValuesFromArray(baseSet, arrayToCheck) {
-    const checkedArray = arrayToCheck.filter(item => baseSet.has(item));
-    return checkedArray.length === arrayToCheck.length;
+  const checkedArray = arrayToCheck.filter((item) => baseSet.has(item));
+  return checkedArray.length === arrayToCheck.length;
 }

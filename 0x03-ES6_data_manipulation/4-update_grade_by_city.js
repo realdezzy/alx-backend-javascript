@@ -11,14 +11,13 @@
  * @returns {Array} - Array of students for a specific city with their new grade
  */
 export default function updateStudentGradeByCity(studentsList, city, newGrade) {
-    if (!Array.isArray(studentsList)) return [];
-    
-    return studentsList
-        .filter(item => item.location === city)
-        .map(student => {
-            const hasGrade = newGrade.filter(item => item.studentId === student.id);
-            student['grade'] = hasGrade.length ? hasGrade[0].grade : 'N/A';
-            return student;
-        });
-}
+  if (!Array.isArray(studentsList)) return [];
 
+  return studentsList
+    .filter((item) => item.location === city)
+    .map((student) => {
+      const hasGrade = newGrade.filter((item) => item.studentId === student.id);
+      student.grade = hasGrade.length ? hasGrade[0].grade : 'N/A';
+      return student;
+    });
+}

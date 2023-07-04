@@ -4,7 +4,7 @@
  */
 
 /**
- * updateUniqueItems - Returns an updated map 
+ * updateUniqueItems - Returns an updated map
  * for all items with initial quantity at 1.
  * @param {Map} map - The map to update
  * @returns {Map} - Map with values.

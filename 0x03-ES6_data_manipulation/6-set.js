@@ -9,5 +9,5 @@
  * @returns {Set} - a set of array elements
  */
 export default function setFromArray(list) {
-    return new Set(list);
+  return new Set(list);
 }

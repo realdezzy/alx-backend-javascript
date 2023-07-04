@@ -4,18 +4,17 @@
  */
 
 /**
- * updateUniqueItems - Returns an updated map 
+ * updateUniqueItems - Returns an updated map
  * for all items with initial quantity at 1.
  * @param {Map} map - The map to update
  * @returns {Map} - Map with values.
  */
 export default function updateUniqueItems(map) {
-    if (!( map instanceof Map))
-        throw new Error("Cannot process");
+  if (!(map instanceof Map)) { throw new Error('Cannot process'); }
 
-    map.forEach((value, key) => {
-        if (value == 1){
-            map.set(key, 100);
-        }
-    })
+  map.forEach((value, key) => {
+    if (value === 1) {
+      map.set(key, 100);
+    }
+  });
 }

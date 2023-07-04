@@ -12,13 +12,13 @@
  * @returns {ArrayBuffer} - an ArrayBuffer with an Int8 value at a specific position
  */
 export default function createInt8TypedArray(length, position, value) {
-    // Uint8 wraps around when value is > 225, 127 for int8
+  // Uint8 wraps around when value is > 225, 127 for int8
 
-    if (position > length) return "Position outside range";
+  if (position > length) return 'Position outside range';
 
-    const buffer = new ArrayBuffer(length);
-    const view = new DataView(buffer)
-    view.setUint8(position, value);
-    
-    return view;
+  const buffer = new ArrayBuffer(length);
+  const view = new DataView(buffer);
+  view.setUint8(position, value);
+
+  return view;
 }
