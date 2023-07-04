@@ -8,7 +8,7 @@
  * @param {Array} studentsList - List of students
  * @param {String} city - City to use as filter
  * @param {Array} newGrade - array of objects containing updates
- * Returns: Array of students for a specific city with their new grade
+ * @returns {Array} - Array of students for a specific city with their new grade
  */
 export default function updateStudentGradeByCity(studentsList, city, newGrade) {
     if (!Array.isArray(studentsList)) return [];

@@ -1,9 +1,13 @@
 /*
- * File: 0-get_list_students.js
+ * File: 10-update_uniq_items.js
  * Author: Franklin Ikeogu
  */
 
 /**
- * getListStudents - Retrieves a list of students.
- * Return: An array of 3 objects.
+ * updateUniqueItems - Returns an updated map 
+ * for all items with initial quantity at 1.
+ * @param {Map} map - The map to update
+ * @returns {Map} - Map with values.
  */
+export const weakMap = new WeakMap();
+export function queryAPI() {}

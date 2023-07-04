@@ -4,15 +4,15 @@
  */
 
 /**
- * createInt8TypedArray - Retrieves a list of students.
+ * createInt8TypedArray - Returns an arraybuffer.
  * length (Number), position (Number), and value (Number).
  * @param {Number} length - length of the array
  * @param {Number} position - position
  * @param {Number} value - value to be added
- * Returns: an ArrayBuffer with an Int8 value at a specific position
+ * @returns {ArrayBuffer} - an ArrayBuffer with an Int8 value at a specific position
  */
 export default function createInt8TypedArray(length, position, value) {
-    // it wraps around to 0 when value is > 225 
+    // Uint8 wraps around when value is > 225, 127 for int8
 
     if (position > length) return "Position outside range";
 

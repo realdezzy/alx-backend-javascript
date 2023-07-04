@@ -5,7 +5,7 @@
 
 /**
  * groceriesList - Returns a map of groceries.
- * Returns: a map of groceries with the following items (name, quantity):
+ * @returns {Map} - a map of groceries with the following items (name, quantity):
  */
 export default function groceriesList() {
     return new Map([

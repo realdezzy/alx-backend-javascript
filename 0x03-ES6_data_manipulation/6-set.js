@@ -4,9 +4,9 @@
  */
 
 /**
- * setFromArray - Retrieves a list of students.
+ * setFromArray - Returns a set of array.
  * @param {Array} list - any Array
- * Return: a set of array elements
+ * @returns {Set} - a set of array elements
  */
 export default function setFromArray(list) {
     return new Set(list);

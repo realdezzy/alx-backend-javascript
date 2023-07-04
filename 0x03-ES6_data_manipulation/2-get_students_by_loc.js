@@ -7,7 +7,7 @@
  * getStudentsByLocation - Retrieves Array of objects who are located in a specific city
  * @param {Array} studentList - Array of student objects
  * @param {String} city - The city to filter for
- * Return: Array of objects who are located in a specific city.
+ * @returns {Array} - Array of objects filtered by city.
  */
 export default function getStudentsByLocation(studentList, city) {
     if(!Array.isArray(studentList)) return [];

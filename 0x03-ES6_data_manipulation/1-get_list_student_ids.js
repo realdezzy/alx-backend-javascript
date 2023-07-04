@@ -6,7 +6,7 @@
 /**
  * getListStudentIds - Retrieves ids of students.
  * @param {array}  students - An array of objects 
- * Return: Array of ids from a list of object
+ * @returns {Array} - Array of ids from a list of object
  */
 export default function getListStudentIds(students) {
     if(!Array.isArray(students)) return [];

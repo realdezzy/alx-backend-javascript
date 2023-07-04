@@ -1,9 +1,22 @@
 /*
- * File: 0-get_list_students.js
+ * File: 10-update_uniq_items.js
  * Author: Franklin Ikeogu
  */
 
 /**
- * getListStudents - Retrieves a list of students.
- * Return: An array of 3 objects.
+ * updateUniqueItems - Returns an updated map 
+ * for all items with initial quantity at 1.
+ * @param {Map} map - The map to update
+ * @returns {Map} - Map with values.
  */
+export default function updateUniqueItems(map) {
+    if (! map instanceof Map) throw new TypeError("Cannot process");
+    
+    map.forEach((value, key, map) => {
+        if (value == 1){
+            map.set(key, 100);
+        }
+    })
+    
+    return map;
+}

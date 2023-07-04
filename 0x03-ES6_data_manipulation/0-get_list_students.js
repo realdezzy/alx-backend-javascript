@@ -5,7 +5,7 @@
 
 /**
  * getListStudents - Retrieves a list of students.
- * Return: An array of 3 objects.
+ * @returns {Array} - An array of 3 objects.
  */
 export default function getListStudents() {
   return [
