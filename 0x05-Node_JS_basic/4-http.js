@@ -1,10 +1,10 @@
 #!/usr/bin/env node
-const http = require('http');
+const app = require('http');
 
 const hostname = '127.0.0.1';
 const port = 1245;
 
-const app = http.createServer((request, response) => {
+app.createServer((request, response) => {
   response.statusCode = 200;
   response.setHeader('Content-Type', 'text/plain');
   response.end('Hello Holberton School!');
