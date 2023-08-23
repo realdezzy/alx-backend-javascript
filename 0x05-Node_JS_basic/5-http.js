@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-const app = require('http');
+const http = require('http');
 const fs = require('fs');
 // const countStudents = require('./3-read_file_async');
 
@@ -39,7 +39,7 @@ function countStudents (path, res) {
   });
 }
 
-const server = app.createServer(async (req, res) => {
+const app = http.createServer(async (req, res) => {
   res.setHeader('Content-Type', 'application/json');
   switch (req.url) {
     case '/students':
@@ -52,7 +52,7 @@ const server = app.createServer(async (req, res) => {
       res.end('Hello Holberton School!\n');
   }
 });
-server.listen(port, host, () => {
+app.listen(port, host, () => {
   console.log(`Server is running on http://${host}:${port}`);
 });
 
